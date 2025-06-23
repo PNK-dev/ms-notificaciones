@@ -1,9 +1,10 @@
 package com.upeu.notificaciones.services.models;
 
+import java.util.Map;
+
 public class EmailDTO {
     private String destinatario;
-    private String asunto;
-    private String mensaje;
+    private String plantilla;
 
     public String getDestinatario() {
         return destinatario;
@@ -13,19 +14,11 @@ public class EmailDTO {
         this.destinatario = destinatario;
     }
 
-    public String getAsunto() {
-        return asunto;
+    public String getPlantilla() {
+        return plantilla;
     }
 
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
-    }
-
-    public String getMensaje() {
-        return mensaje;
-    }
-
-    public void setMensaje(String mensaje) {
-        this.mensaje = mensaje;
+    public void setPlantilla(String plantilla) {
+        this.plantilla = plantilla;
     }
 }
